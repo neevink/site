@@ -1,0 +1,326 @@
+body{
+	margin: 0;
+
+	background-color: #EBEBEB;
+
+	font-family: 'Inter', sans-serif;
+	letter-spacing: -0.5px;
+
+	color: #515151;
+	font-weight: 300;
+}
+
+.container{
+	margin: 60px auto;
+	height: 850px;
+	width: 1200px;
+
+	background-color: #FFFFFF;
+	border-radius: 25px;
+
+	display: flex;
+	justify-content: flex-start;
+}
+
+.block{
+	height: 100%;
+	width: 70%;
+
+	font-size: 18px;
+}
+
+.info-block{
+	height: 100%;
+	width: 30%;
+
+	background-color: #FAFAFA;
+	border-right: 2px solid #FAFAFA;
+
+	border-radius: 0 25px 25px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	width: 100%;
+	height: 70px;
+
+	display: flex;
+	justify-content: center;
+}
+
+nav{
+	width: 500px;
+	margin-right: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a{
+
+	font-size: 15px;
+	height: 35px;
+	width: 110px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+
+	text-decoration: none;
+	color: #515151;
+	font-weight: 300;
+
+	border: 2px solid transparent;
+	border-radius: 5px;
+
+	transition: all;
+	transition-duration: 0.25s;
+}
+
+nav a:hover{
+	color: #583E92;
+	border-color: #583E92;
+	font-weight: 400;
+}
+
+nav a.selected{
+	color: white;
+	border-color: #583E92;
+	background-color: #583E92;
+}
+
+nav a.selected:hover{
+	color: white;
+}
+
+.main-photo{
+	height: 200px;
+	width: 200px;
+	background-color: #EEE;
+	border-radius: 50%;
+}
+
+.name{
+	margin-top: 20px;
+
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+}
+
+h2{
+	margin: 20px auto;
+	font-size: 45px;
+	font-weight: 300;
+	color: black;
+}
+
+.text-block{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.text-block p{
+	text-indent: 40px;
+	margin: 10px 0;
+}
+
+.intext-border{
+	height: 300px;
+	width: 150px;
+	margin-top: 20px;
+
+	border-radius: 15px;
+
+	background-color: #583E92;
+	color: white;
+
+	position: relative;
+}
+
+.intext-image{
+	height: 280px;
+	width: 280px;
+
+	border-radius: 15px;
+
+	background-color: #EEE;
+	color: white;
+
+	position: absolute;
+	top:10px;
+	left: 10px;
+}
+
+.links{
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links a:hover{
+	background-color: #583E92;
+	transform: all;
+	transition-duration: 0.25s;
+}
+
+.links a{
+	height: 64px;
+	width: 64px;
+
+	border-radius: 50%;
+	display: block;
+
+	background-size: contain;
+}
+
+a.instagram{
+	background-image: url("../images/instagram.png");
+}
+
+a.vk{
+	background-image: url("../images/vk.png");
+}
+
+a.telegram{
+	background-image: url("../images/telegram.png");
+}
+
+a.linkedin{
+	background-image: url("../images/linkedin.png");
+}
+
+li{
+	margin-left: 60px;
+}
+
+.collage{
+	height: 300px;
+	width: 100%;
+
+	margin-top: 40px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.collage-photo{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	border-radius: 10px;
+	border: 5px solid #FAFAFA;
+
+	height: 250px;
+}
+
+.player{
+	height: 400px;
+	width: 300px;
+
+	margin: 20px auto;
+
+	position: relative;
+}
+
+.player img{
+	height: 300px;
+	width: 300px;
+
+	border-radius: 10px 10px 0 0;
+}
+
+.player audio{
+	width: 100%;
+	margin: 0;
+	position: relative;
+	top: -5px;
+
+	border-radius: 0 0 10px 10px;
+}
+
+@media handheld, (max-width: 1200px){
+	.container{
+		width: 100%;
+		height: 100%;
+
+		background-color: #FFFFFF;
+		border-radius: 25px 25px 0 0;
+
+		flex-direction: column;
+	}
+
+	.block{
+		height: 100%;
+		width: 100%;
+
+		font-size: 18px;
+	}
+
+	header{
+		margin: 0 auto;
+	}
+
+	.info-block{
+		padding-top: 70px;
+		padding-bottom: 70px;
+		margin-bottom: 0;
+		height: 100%;
+		width: 100%;
+
+		border-radius: 0;
+	}
+
+	nav{
+		width: 100%;
+		margin: 0 auto;
+
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav a{
+		font-size: 13px;
+		width: 75px;
+	}
+
+	.collage{
+		height: 100%;
+		width: 100%;
+
+		margin-top: 40px;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.collage-photo{
+		border-radius: 10px;
+		border: 5px solid #FAFAFA;
+
+		height: auto;
+		width: 90%;
+
+		margin-bottom: 40px; 
+	}
+
+	.text-block{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.player{
+		margin: 0 auto;
+	}
+
+	h2{
+		font-size: 35px;
+	}
+}
