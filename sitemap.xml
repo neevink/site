@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://neevink.github.io/site</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/index.html</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/develop.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/music.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/biography.html</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://neevink.github.io/site/en</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/en/index.html</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/en/develop.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/en/music.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://neevink.github.io/site/en/biography.html</loc>
+        <priority>0.5</priority>
+    </url>
+</urlset>
