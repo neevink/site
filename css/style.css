@@ -10,8 +10,22 @@ body{
 	font-weight: 300;
 }
 
+.lang-changer{
+	margin: 30px;
+
+	text-decoration: none;
+	color: #515151;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.lang-changer:hover{
+	color: #583E92;
+	font-weight: 400;
+}
+
 .container{
-	margin: 60px auto;
+	margin: 40px auto;
 	height: 850px;
 	width: 1200px;
 
@@ -61,7 +75,6 @@ nav{
 }
 
 nav a{
-
 	font-size: 15px;
 	height: 35px;
 	width: 110px;
