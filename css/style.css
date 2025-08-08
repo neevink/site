@@ -1,18 +1,15 @@
 body{
 	margin: 0;
-
 	background-color: #EBEBEB;
-
 	font-family: 'Inter', sans-serif;
 	letter-spacing: -0.5px;
-
 	color: #515151;
 	font-weight: 300;
 }
 
 .lang-changer{
+	display: block; 
 	margin: 40px;
-
 	text-decoration: none;
 	color: #515151;
 	font-weight: 400;
@@ -25,45 +22,43 @@ body{
 }
 
 .container{
-	margin: 40px auto;
-	height: 850px;
-	width: 1200px;
-
+	margin: 0 auto 40px auto; 
+	max-width: 1200px;
+	width: 100%; 
 	background-color: #FFFFFF;
 	border-radius: 25px;
-
 	display: flex;
 	justify-content: flex-start;
+	box-sizing: border-box; 
 }
 
 .block{
-	height: 100%;
 	width: 70%;
-
 	font-size: 18px;
+	box-sizing: border-box; 
+	padding-bottom: 40px;
 }
 
 .info-block{
-	height: 100%;
 	width: 30%;
-
 	background-color: #FAFAFA;
 	border-right: 2px solid #FAFAFA;
-
 	border-radius: 0 25px 25px 0;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center; 
+	box-sizing: border-box; 
+	padding: 20px; 
 }
 
 header{
 	width: 100%;
 	height: 70px;
-
 	display: flex;
 	justify-content: center;
+	margin-top: 20px; 
 }
 
 nav{
@@ -81,16 +76,12 @@ nav a{
 	display: inline-block;
 	text-align: center;
 	line-height: 35px;
-
 	text-decoration: none;
 	color: #515151;
 	font-weight: 300;
-
 	border: 2px solid transparent;
 	border-radius: 5px;
-
-	transition: all;
-	transition-duration: 0.25s;
+	transition: all 0.25s; 
 }
 
 nav a:hover{
@@ -114,11 +105,11 @@ nav a.selected:hover{
 	width: 200px;
 	background-color: #EEE;
 	border-radius: 50%;
+	object-fit: cover; 
 }
 
 .name{
 	margin-top: 20px;
-
 	font-weight: 500;
 	font-size: 20px;
 	color: black;
@@ -129,6 +120,7 @@ h2{
 	font-size: 45px;
 	font-weight: 300;
 	color: black;
+	text-align: center; 
 }
 
 .text-block{
@@ -138,202 +130,181 @@ h2{
 
 .text-block p{
 	text-indent: 40px;
-	margin: 10px 0;
+	margin: 17px 0;
+	line-height: 1.4;
 }
 
-.intext-border{
-	height: 300px;
-	width: 150px;
-	margin-top: 20px;
-
-	border-radius: 15px;
-
-	background-color: #583E92;
-	color: white;
-
-	position: relative;
+.text-block a {
+	color: #583E92;
+	font-weight: 500;
+	text-decoration: none;
+	transition: text-decoration 0.2s;
 }
 
-.intext-image{
-	height: 280px;
-	width: 280px;
-
-	border-radius: 15px;
-
-	background-color: #EEE;
-	color: white;
-
-	position: absolute;
-	top:10px;
-	left: 10px;
+.text-block a:hover {
+	text-decoration: underline;
 }
 
 .links{
 	margin: 20px auto;
 	display: flex;
 	justify-content: space-between;
+	width: 100%; 
+	max-width: 300px; 
 }
 
 .links a:hover{
 	background-color: #583E92;
-	transform: all;
-	transition-duration: 0.25s;
 }
 
 .links a{
 	height: 64px;
 	width: 64px;
-
 	border-radius: 50%;
 	display: block;
-
 	background-size: contain;
+	transition: background-color 0.25s; 
 }
 
-a.instagram{
-	background-image: url("../images/instagram.png");
-}
-
-a.vk{
-	background-image: url("../images/vk.png");
-}
-
-a.telegram{
-	background-image: url("../images/telegram.png");
-}
-
-a.linkedin{
-	background-image: url("../images/linkedin.png");
-}
+a.instagram{ background-image: url("../images/instagram.png"); }
+a.vk{ background-image: url("../images/vk.png"); }
+a.telegram{ background-image: url("../images/telegram.png"); }
+a.linkedin{ background-image: url("../images/linkedin.png"); }
 
 li{
 	margin-left: 60px;
+	margin-bottom: 10px;
 }
 
 .collage{
-	height: 300px;
 	width: 100%;
-
 	margin-top: 40px;
-
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap; 
+	gap: 15px; 
 }
 
 .collage-photo{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-
 	border-radius: 10px;
 	border: 5px solid #FAFAFA;
-
 	height: 250px;
+	flex-shrink: 0; 
+	width: auto; 
+	max-width: 31%;
 }
 
 .player{
-	height: 400px;
-	width: 300px;
-
-	margin: 20px auto;
-
+	width: 300px; 
+	margin: 20px auto; 
 	position: relative;
 }
 
 .player img{
-	height: 300px;
-	width: 300px;
-
+	width: 100%; 
+	height: auto;
 	border-radius: 10px 10px 0 0;
+	display: block; 
 }
 
 .player audio{
 	width: 100%;
 	margin: 0;
 	position: relative;
-	top: -5px;
-
+	top: -5px; 
 	border-radius: 0 0 10px 10px;
 }
 
-@media handheld, (max-width: 1200px){
+@media screen and (max-width: 1200px){
 	.container{
-		width: 100%;
-		height: 100%;
-
-		background-color: #FFFFFF;
-		border-radius: 25px 25px 0 0;
-
-		flex-direction: column;
+		flex-direction: column; 
+		border-radius: 0; 
+        margin-bottom: 0;
 	}
 
-	.block{
-		height: 100%;
-		width: 100%;
-
-		font-size: 18px;
+	.block, .info-block {
+		width: 100%; 
+		border-radius: 0; 
+	}
+	
+	.info-block {
+		order: -1; 
+		padding: 40px 20px;
+	}
+	
+	.block {
+		padding-bottom: 20px;
 	}
 
 	header{
 		margin: 0 auto;
-	}
-
-	.info-block{
-		padding-top: 70px;
-		padding-bottom: 70px;
-		margin-bottom: 0;
-		height: 100%;
-		width: 100%;
-
-		border-radius: 0;
+        height: auto; 
+        padding: 20px 0; 
 	}
 
 	nav{
 		width: 100%;
-		margin: 0 auto;
-
-		display: flex;
+		margin: 0;
 		justify-content: space-around;
+		flex-wrap: wrap; 
+		gap: 10px; 
 	}
-
-	nav a{
-		font-size: 13px;
-		width: 75px;
-	}
-
+	
 	.collage{
-		height: 100%;
-		width: 100%;
-
-		margin-top: 40px;
-
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		flex-direction: column;
+		flex-direction: column; 
+		height: auto; 
 	}
 
 	.collage-photo{
-		border-radius: 10px;
-		border: 5px solid #FAFAFA;
-
 		height: auto;
-		width: 90%;
-
-		margin-bottom: 40px; 
+		width: 90%; 
+		max-width: 400px;
+		margin-bottom: 20px; 
 	}
+}
 
+@media screen and (max-width: 768px) {
+	.lang-changer {
+		margin: 20px;
+	}
+	
+	nav a{
+		font-size: 13px;
+		width: 85px; 
+	}
+	
 	.text-block{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
-	.player{
-		margin: 0 auto;
+	
+	.text-block p {
+		text-indent: 20px; 
 	}
-
+	
 	h2{
 		font-size: 35px;
+	}
+	
+	.main-photo {
+		width: 150px;
+		height: 150px;
+	}
+	
+	.links a {
+		width: 50px;
+		height: 50px;
+	}
+
+	li {
+		margin-left: 30px;
+	}
+
+	.player {
+		width: 100%; 
 	}
 }
