@@ -179,23 +179,35 @@ li{
 .collage{
 	width: 100%;
 	margin-top: 40px;
+	padding: 0 20px;
+	box-sizing: border-box;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap; 
 	gap: 15px; 
 }
 
-.collage-photo{
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 10px;
+.collage a {
+	display: block;
+	flex: 1 1 250px;
+	max-width: 30%;
 	border: 5px solid #FAFAFA;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.collage a:hover .collage-photo {
+	transform: scale(1.05);
+}
+
+.collage-photo{
 	height: 250px;
-	flex-shrink: 0; 
-	width: auto; 
-	max-width: 31%;
+	width: 100%; 
+	display: block;
+	object-fit: cover; 
+	transition: transform 0.3s ease-in-out;
 }
 
 .player{
@@ -253,17 +265,9 @@ li{
 		flex-wrap: wrap; 
 		gap: 10px; 
 	}
-	
-	.collage{
-		flex-direction: column; 
-		height: auto; 
-	}
 
-	.collage-photo{
-		height: auto;
-		width: 90%; 
-		max-width: 400px;
-		margin-bottom: 20px; 
+	.collage a {
+		max-width: 45%;
 	}
 }
 
@@ -306,5 +310,11 @@ li{
 
 	.player {
 		width: 100%; 
+	}
+	
+	.collage a {
+		max-width: 90%;
+		flex-basis: 90%;
+		margin: 0 auto;
 	}
 }

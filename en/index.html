@@ -9,27 +9,30 @@
 	<meta name="keywords" content="Neevin,Kirill,Neevin Kirill,Kirill Neevin,neevin site,kirill neevin site">
 
 	<meta name="google-site-verification" content="fomXWXE1S3sGK7MNBrgMN3F6_54erqRWYEaPTozGiwk" />
-	<meta name="yandex-verification" content="b9e0c78b5bf3e35f" />
+	<meta name="yandex-verification" content="e796c49ae5a0b846" />
 	
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900&display=swap" rel="stylesheet">
 
 	<!-- ================= FAVICONS ================= -->
-	<link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
-	<link rel="manifest" href="../icon/site.webmanifest">
-	<link rel="shortcut icon" href="../icon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/site.webmanifest">
+	<link rel="shortcut icon" href="icon/favicon.ico">
 	<meta name="msapplication-TileColor" content="#583e92">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#583e92">
 	<!-- ============================================ -->
 
-	<script type="application/ld+json" src="../schema.jsonld"></script>
+	<!-- style for gallery (Lightbox) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+
+	<script type="application/ld+json" src="schema.jsonld"></script>
 
 </head>
 <body>
 	<a class="lang-changer" href="../index.html">russian</a>
-	<div class="container">
+	<main class="container">
 		<div class="block">
 			<header>
 				<nav>
@@ -46,9 +49,9 @@
 			</div>
 
 			<div class="collage">
-				<img class="collage-photo" src="../images/on-stairs.jpg">
-				<img class="collage-photo" src="../images/outside.jpg">
-				<img class="collage-photo" src="../images/photoshop.jpg">
+				<a href="../images/on-stairs.jpg"><img class="collage-photo" src="../images/on-stairs.jpg" alt="Photo on stairs"></a>
+				<a href="../images/outside.jpg"><img class="collage-photo" src="../images/outside.jpg" alt="Outside photo"></a>
+				<a href="../images/photoshop.jpg"><img class="collage-photo" src="../images/photoshop.jpg" alt="Changed photo"></a>
 			</div>
 
 			<div class="text-block">
@@ -57,9 +60,9 @@
 
 		</div>
 
-		<div class="info-block">
+		<aside class="info-block">
 			<div class="info">
-				<img class="main-photo" src="../images/main-photo.png">
+				<img class="main-photo" src="../images/main-photo.png" alt="Photo of Kirill Neevin">
 			</div>
 
 			<div class="name">
@@ -73,9 +76,14 @@
 				<a href="https://www.instagram.com/neevink" class="instagram"></a>
 				<a href="https://vk.com/neevin" class="vk"></a>
 				<a href="https://t.me/neevin" class="telegram"></a>
-
 			</div>
-		</div>
-	</div>
+		</aside>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+	<script>
+		// initialization of gallery
+		var lightbox = new SimpleLightbox('.collage a');
+	</script>
 </body>
 </html>
