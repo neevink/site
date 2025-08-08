@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Кирилл Неевин",
+  "url": "https://neevink.github.io/site/",
+  "image": "https://neevink.github.io/site/images/main-photo.png",
+  "jobTitle": "Программист-разработчик",
+  "description": "Бэкенд-разработчик из Яндекса и студент ИТМО. Увлекаюсь алгоритмами, разработкой высоконагруженных веб-сервисов и созданием музыки в свободное время.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Университет ИТМО"
+  },
+  "sameAs": [
+    "https://github.com/neevink",
+    "https://www.linkedin.com/in/neevin"
+  ]
+}
