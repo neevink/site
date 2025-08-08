@@ -1,44 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Главная страница -->
     <url>
-        <loc>https://neevink.github.io/site</loc>
-        <priority>1.0</priority>
+        <loc>https://neevink.github.io/site/</loc>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://neevink.github.io/site/"/>
     </url>
     <url>
-        <loc>https://neevink.github.io/site/index.html</loc>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://neevink.github.io/site/develop.html</loc>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://neevink.github.io/site/music.html</loc>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://neevink.github.io/site/biography.html</loc>
-        <priority>0.5</priority>
+        <loc>https://neevink.github.io/site/en/</loc>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://neevink.github.io/site/"/>
     </url>
 
+    <!-- Страница Разработки -->
     <url>
-        <loc>https://neevink.github.io/site/en</loc>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://neevink.github.io/site/en/index.html</loc>
-        <priority>1.0</priority>
+        <loc>https://neevink.github.io/site/develop.html</loc>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/develop.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/develop.html"/>
     </url>
     <url>
         <loc>https://neevink.github.io/site/en/develop.html</loc>
-        <priority>0.5</priority>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/develop.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/develop.html"/>
+    </url>
+
+    <!-- Страница Музыки -->
+    <url>
+        <loc>https://neevink.github.io/site/music.html</loc>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/music.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/music.html"/>
     </url>
     <url>
         <loc>https://neevink.github.io/site/en/music.html</loc>
-        <priority>0.5</priority>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/music.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/music.html"/>
+    </url>
+
+    <!-- Страница Биографии -->
+     <url>
+        <loc>https://neevink.github.io/site/biography.html</loc>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/biography.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/biography.html"/>
     </url>
     <url>
         <loc>https://neevink.github.io/site/en/biography.html</loc>
-        <priority>0.5</priority>
+        <lastmod>2025-08-07</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://neevink.github.io/site/biography.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://neevink.github.io/site/en/biography.html"/>
     </url>
+
 </urlset>

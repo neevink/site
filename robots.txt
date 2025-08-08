@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neevink.github.io/sitemap.xml
+Sitemap: https://neevink.github.io/site/sitemap.xml
