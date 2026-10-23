@@ -1,3 +1,7 @@
+html{
+	scrollbar-gutter: stable;
+}
+
 body{
 	margin: 0;
 	background-color: #EBEBEB;
@@ -24,6 +28,7 @@ body{
 .container{
 	margin: 0 auto 40px auto; 
 	max-width: 1200px;
+	min-height: 80vh;
 	width: 100%; 
 	background-color: #FFFFFF;
 	border-radius: 25px;
@@ -199,6 +204,7 @@ li{
 
 @media screen and (max-width: 1200px){
 	.container{
+		min-height: 0;
 		flex-direction: column; 
 		border-radius: 0; 
         margin-bottom: 0;
