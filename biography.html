@@ -1,5 +1,5 @@
-<!DOCTYPE html lang="ru">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<title>Биография — Неевин Кирилл</title>
 	
@@ -27,7 +27,25 @@
 	<!-- style for gallery (Lightbox) -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
 
-	<script type="application/ld+json" src="schema.jsonld"></script>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Кирилл Неевин",
+  "url": "https://neevink.github.io/site/",
+  "image": "https://neevink.github.io/site/images/main-photo.png",
+  "jobTitle": "Программист-разработчик",
+  "description": "Программист из ИТМО. Занимаюсь творчеством в свободное время и всегда придумываю себе новые занятия.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Университет ИТМО"
+  },
+  "sameAs": [
+    "https://github.com/neevink",
+    "https://www.linkedin.com/in/neevin"
+  ]
+}
+</script>
 
 </head>
 <body>
@@ -128,10 +146,10 @@
 			Программист. Весёлый парень.
 
 			<div class="links">
-				<a href="https://www.linkedin.com/in/neevin" class="linkedin"></a>
-				<a href="https://www.instagram.com/neevink" class="instagram"></a>
-				<a href="https://vk.com/neevin" class="vk"></a>
-				<a href="https://t.me/neevin" class="telegram"></a>
+				<a href="https://www.linkedin.com/in/neevin" class="linkedin" aria-label="LinkedIn"></a>
+				<a href="https://www.instagram.com/neevink" class="instagram" aria-label="Instagram"></a>
+				<a href="https://vk.com/neevin" class="vk" aria-label="VK"></a>
+				<a href="https://t.me/neevin" class="telegram" aria-label="Telegram"></a>
 			</div>
 		</aside>
 	</main>
