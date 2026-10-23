@@ -1,9 +1,6 @@
 // Each .gallery is independent; its links are the source of truth.
 (() => {
-  const english = document.documentElement.lang === 'en';
-  const labels = english
-    ? { gallery: 'Photo gallery', close: 'Close', previous: 'Previous photo', next: 'Next photo', error: 'Image could not be loaded.' }
-    : { gallery: 'Фотогалерея', close: 'Закрыть', previous: 'Предыдущее фото', next: 'Следующее фото', error: 'Не удалось загрузить изображение.' };
+  const labels = { gallery: 'Фотогалерея', close: 'Закрыть', previous: 'Предыдущее фото', next: 'Следующее фото', error: 'Не удалось загрузить изображение.' };
   const dialog = document.createElement('dialog');
   dialog.className = 'photo-viewer';
   dialog.setAttribute('aria-label', labels.gallery);

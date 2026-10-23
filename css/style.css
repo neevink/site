@@ -11,24 +11,10 @@ body{
 	font-weight: 300;
 }
 
-.lang-changer{
-	display: block; 
-	margin: 40px;
-	text-decoration: none;
-	color: #515151;
-	font-weight: 400;
-	font-size: 18px;
-}
-
-.lang-changer:hover{
-	color: #583E92;
-	font-weight: 400;
-}
-
 .container{
-	margin: 0 auto 40px auto; 
+	margin: 40px auto;
 	max-width: 1200px;
-	min-height: 80vh;
+	min-height: 90vh;
 	width: 100%; 
 	background-color: #FFFFFF;
 	border-radius: 25px;
@@ -205,6 +191,7 @@ li{
 @media screen and (max-width: 1200px){
 	.container{
 		min-height: 0;
+		margin-top: 20px;
 		flex-direction: column; 
 		border-radius: 0; 
         margin-bottom: 0;
@@ -241,10 +228,6 @@ li{
 }
 
 @media screen and (max-width: 768px) {
-	.lang-changer {
-		margin: 20px;
-	}
-	
 	nav a{
 		font-size: 13px;
 		width: 85px; 
