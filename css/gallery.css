@@ -1,0 +1,138 @@
+/* A gallery is just a group of image links. Override --gallery-fit or
+   --gallery-position on a gallery/item to customize the default crop. */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+    gap: 16px;
+    margin: 32px 40px 20px;
+}
+
+.gallery > a {
+    display: block;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f4f3f6;
+    cursor: zoom-in;
+}
+
+.gallery-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: var(--gallery-fit, cover);
+    object-position: var(--gallery-position, center);
+}
+
+.gallery > a:focus-visible {
+    outline: 1px solid #777;
+    outline-offset: 3px;
+}
+
+.photo-viewer button:focus-visible {
+    outline: 1px solid #ccc;
+    outline-offset: 3px;
+}
+
+.gallery-count { display: none; }
+
+.photo-viewer {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 64px 64px 48px;
+    box-sizing: border-box;
+    border: 0;
+    background: #15131bef;
+    color: white;
+}
+
+.photo-viewer::backdrop { background: #15131b; }
+.photo-viewer[open] { display: grid; place-items: center; }
+.photo-viewer figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.photo-viewer img {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    flex: 1;
+    object-fit: contain;
+    pointer-events: auto;
+}
+.photo-viewer figcaption {
+    flex: none;
+    max-width: 65ch;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.4;
+    overflow: auto;
+    max-height: 20%;
+}
+.photo-viewer button {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ffffff40;
+    border-radius: 50%;
+    background: #24212dc9;
+    color: white;
+    font: 32px/1 sans-serif;
+    cursor: pointer;
+}
+.photo-viewer button[hidden] { display: none; }
+.photo-viewer button:hover { background: #45424d; }
+.photo-viewer__close { top: 12px; right: 12px; }
+.photo-viewer__previous { left: 12px; top: calc(50% - 22px); }
+.photo-viewer__next { right: 12px; top: calc(50% - 22px); }
+.photo-viewer__count { position: absolute; bottom: 14px; font-size: 14px; }
+.photo-viewer__error { text-align: center; }
+
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        display: flex;
+        gap: 12px;
+        margin: 28px 0 0;
+        padding: 4px 20px 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 20px;
+        scrollbar-width: thin;
+        scrollbar-color: #c4b7dc transparent;
+    }
+    .gallery > a {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+    }
+    .gallery > a:only-child { flex-basis: 100%; }
+    .gallery-count {
+        display: block;
+        margin: 4px 20px 20px;
+        text-align: right;
+        font-size: 13px;
+        color: #6f637f;
+    }
+    .photo-viewer { padding: 64px 56px 48px; }
+    .photo-viewer__previous { left: 6px; }
+    .photo-viewer__next { right: 6px; }
+    .photo-viewer figcaption { font-size: 14px; }
+}

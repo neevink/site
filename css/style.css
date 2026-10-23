@@ -166,48 +166,14 @@ h2{
 	transition: background-color 0.25s; 
 }
 
-a.instagram{ background-image: url("../images/instagram.png"); }
-a.vk{ background-image: url("../images/vk.png"); }
-a.telegram{ background-image: url("../images/telegram.png"); }
-a.linkedin{ background-image: url("../images/linkedin.png"); }
+a.instagram{ background-image: url("../images/navigation/instagram.png"); }
+a.vk{ background-image: url("../images/navigation/vk.png"); }
+a.telegram{ background-image: url("../images/navigation/telegram.png"); }
+a.linkedin{ background-image: url("../images/navigation/linkedin.png"); }
 
 li{
 	margin-left: 60px;
 	margin-bottom: 10px;
-}
-
-.collage{
-	width: 100%;
-	margin-top: 40px;
-	padding: 0 20px;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap; 
-	gap: 15px; 
-}
-
-.collage a {
-	display: block;
-	flex: 1 1 250px;
-	max-width: 30%;
-	border: 5px solid #FAFAFA;
-	border-radius: 12px;
-	overflow: hidden;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.collage a:hover .collage-photo {
-	transform: scale(1.05);
-}
-
-.collage-photo{
-	height: 250px;
-	width: 100%; 
-	display: block;
-	object-fit: cover; 
-	transition: transform 0.3s ease-in-out;
 }
 
 .player{
@@ -266,9 +232,6 @@ li{
 		gap: 10px; 
 	}
 
-	.collage a {
-		max-width: 45%;
-	}
 }
 
 @media screen and (max-width: 768px) {
@@ -312,9 +275,4 @@ li{
 		width: 100%; 
 	}
 	
-	.collage a {
-		max-width: 90%;
-		flex-basis: 90%;
-		margin: 0 auto;
-	}
 }

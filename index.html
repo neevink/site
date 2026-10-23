@@ -12,6 +12,7 @@
 	<meta name="yandex-verification" content="e796c49ae5a0b846" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/gallery.css">
 	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900&display=swap" rel="stylesheet">
 	
 	<!-- ================= FAVICONS ================= -->
@@ -24,8 +25,6 @@
 	<meta name="theme-color" content="#583e92">
 	<!-- ============================================ -->
 
-	<!-- style for gallery (Lightbox) -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
 
 	<script type="application/ld+json">
 {
@@ -65,10 +64,10 @@
 				<p>Я долго думал что бы такого сверстать, чтобы попрактиковать свои навыки в вёрстке, и ничего лучше, чем написать сайт о самом себе, не придумал.</p>
 			</div>
 
-			<div class="collage">
-				<a href="images/on-stairs.jpg"><img class="collage-photo" src="images/on-stairs.jpg" alt="Кирилл Неевин на лестнице"></a>
-				<a href="images/outside.jpg"><img class="collage-photo" src="images/outside.jpg" alt="Кирилл Неевин на улице"></a>
-				<a href="images/photoshop.jpg"><img class="collage-photo" src="images/photoshop.jpg" alt="Кирилл Неевин в самолёте"></a>
+			<div class="gallery">
+				<a href="images/on-stairs.jpg"><img class="gallery-photo" src="images/on-stairs.jpg" alt="Я на лестнице"></a>
+				<a href="images/outside.jpg"><img class="gallery-photo" src="images/outside.jpg" alt="Тимур и я"></a>
+				<a href="images/photoshop.jpg"><img class="gallery-photo" src="images/photoshop.jpg" alt="Фотошоп, где я в самолёте"></a>
 			</div>
 
 			<div class="text-block">
@@ -90,17 +89,13 @@
 
 			<div class="links">
 				<a href="https://www.linkedin.com/in/neevin" class="linkedin" aria-label="LinkedIn"></a>
-				<a href="https://www.instagram.com/neevink" class="instagram" aria-label="Instagram"></a>
+				<!-- <a href="https://www.instagram.com/neevink" class="instagram" aria-label="Instagram"></a> -->
 				<a href="https://vk.com/neevin" class="vk" aria-label="VK"></a>
 				<a href="https://t.me/neevin" class="telegram" aria-label="Telegram"></a>
 			</div>
 		</aside>
 	</main>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
-	<script>
-		// initialization of gallery
-		var lightbox = new SimpleLightbox('.collage a');
-	</script>
+	<script src="js/gallery.js" defer></script>
 </body>
 </html>
